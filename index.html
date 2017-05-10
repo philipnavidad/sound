@@ -105,8 +105,11 @@
 		scale="0.1 0.1 0.1"
 		rotation="0 0 0"
 		geometry="primitive: box" material="color: blue"
-		altspace-cursor-collider="enabled: true"
-		n-cockpit-parent>
+		n-cockpit-parent altspace-cursor-collider="enabled: true">
+		<a-entity 
+			n-sound="src: files/yay1.mp3; volume: 0.7; oneshot: true; on: click"
+			sync="own-on: mousedown" sync-n-sound>
+		</a-entity>
 	</a-entity>	
 </a-scene>
 </body>
