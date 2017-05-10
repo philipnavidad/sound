@@ -97,13 +97,19 @@
 		onclick="document.getElementById('wav').components['n-sound'].seek(9)">
 		<a-entity n-text="fontSize: 2; text: seek wav" position="0 1 0" rotation="0 90 0"></a-entity>
 	</a-entity>
-		<a-entity
+	<a-entity
 		position="0 0 -0.7"
 		scale="0.2 0.2 0.2"
 		rotation="-30 0 0"
 		n-text="fontSize: 2; text: text you can read comfortably"
 		n-cockpit-parent>
-	</a-entity>
+		<a-entity id="oneshot"
+		geometry="primitive: box" material="color: blue" position="1 0 -2"
+		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		</a-entity>
+	</a-entity>	
 </a-scene>
 </body>
 </html>
