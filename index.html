@@ -2,7 +2,7 @@
 <head>
 	<title>Native Sound</title>
 	<script src="https://aframe.io/releases/0.3.0/aframe.js"></script>
-  <script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.4.2/dist/altspace.min.js"></script>
+  	<script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.4.2/dist/altspace.min.js"></script>
 	<script>
 		AFRAME.registerComponent('random-pitch-click', {
 			init: function (time) {
@@ -10,6 +10,19 @@
 					this.setAttribute('n-sound', 'pitch', Math.random() * 3 + 1);
 					this.components['n-sound'].playSound();
 				});
+			}
+		});
+	</script>
+	<script>
+		// n-skeleton-parent only works with root meshes at the moment. Since most model loaders use a root
+		// container object, we need to collapse the model so that n-skeleton-parent can access the mesh directly.
+		AFRAME.registerComponent('collapse-model', {
+			init: function () {
+				this.el.addEventListener('model-loaded', function () {
+					this.el.setObject3D('mesh', this.el.object3DMap.mesh.children[0]);
+					// setObject3D emits this event in a-frame 0.4.0
+					this.el.emit('object3dset', {type: 'mesh'});
+				}.bind(this));
 			}
 		});
 	</script>
@@ -110,7 +123,17 @@
 			n-sound="src: files/yay1.mp3; volume: 0.7; oneshot: true; on: click"
 			sync="own-on: mousedown" sync-n-sound>
 		</a-entity>
-	</a-entity>	
+	</a-entity>
+	<a-entity
+		id="metal-armor-instantiator"
+		geometry="primitive: box" material="color: blue"
+		instantiator="group: armor; on: click; mixin: metal-armor parent-to-chest"
+		position="2.3 2 0">
+	</a-entity>
+	<a-entity
+		id="initial-synced-box"
+		one-per-user="primitive: box parent-to-left-hand">
+	</a-entity>
 </a-scene>
 </body>
 </html>
