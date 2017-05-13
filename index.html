@@ -101,17 +101,7 @@
 		geometry="primitive: box" material="color: red"
 		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
-		n-cockpit-parent altspace-cursor-collider="enabled: true">
-	</a-entity>
-	<a-entity
-		id="yay"  
-		position="-0.5 0.5 -0.5"
-		scale="0.1 0.1 0.1"
-		rotation="0 0 0"
-		geometry="primitive: box" material="color: green"
-		n-cockpit-parent altspace-cursor-collider="enabled: true"
-		n-sound="src: files/yay1.mp3; volume: 0.7; oneshot: true; on: click"
-		sync="own-on: mousedown" sync-n-sound>
+		n-skeleton-parent="part: chest" altspace-cursor-collider="enabled: true">
 	</a-entity>
 	<a-entity
 		id="metal-armor-instantiator"
