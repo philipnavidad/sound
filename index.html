@@ -127,13 +127,15 @@
 	<a-entity
 		id="metal-armor-instantiator"
 		geometry="primitive: box" material="color: yellow" 
-		parent-to-chest
+		n-skeleton-parent="part: chest;"
+		sync sync-n-skeleton-parent
 		position="2.3 2 0">
 	</a-entity>
 	<a-entity
 		id="initial-synced-box"
 		one-per-user="primitive: box parent-to-left-hand">
 	</a-entity>
+	
 </a-scene>
 </body>
 </html>
