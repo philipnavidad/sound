@@ -36,15 +36,13 @@
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 		position="0 -1 -2"
 	  	scale="0.3 0.1 0.1"
-    		rotation="30 0 0">
-    		<a-entity n-text="fontSize: 2; text: Applause" position="0 0.5 0" rotation="30 0 0"></a-entity>
+    		rotation="20 0 0">
 	</a-box>
-	<a-text value="Applause!"
+	<a-entity n-text="fontSize: 1; text: Applause"
 		n-skeleton-parent="part: spine;"
 		position="0 -0.5 -2"
-	  	scale="0.3 0.1 0.1"
-    		rotation="30 0 0">
-	</a-text>
+    		rotation="20 0 0">
+	</a-entity>
   
   	<a-box color='yellow' 
 	  	n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
@@ -52,14 +50,12 @@
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 		position="0.5 -1 -2"
 	  	scale="0.3 0.1 0.1"
-    		rotation="30 0 0">
-    		<a-entity n-text="fontSize: 2; text: Cheer" position="0 0.5 0" rotation="30 0 0"></a-entity>
+    		rotation="20 0 0">
 	</a-box>
-	
-	<a-entity n-text="fontSize: 2; text: Cheer"
+	<a-entity n-text="fontSize: 1; text: Cheer"
 		n-skeleton-parent="part: spine;"
 		position="0.5 -0.5 -2"
-    		rotation="30 0 0">
+    		rotation="20 0 0">
 	</a-entity>
   
 	<a-box color='red' 
@@ -68,21 +64,28 @@
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 		position="1 -1 -2"
 	  	scale="0.3 0.1 0.1"
-    		rotation="30 0 0">
-    		<a-entity n-text="fontSize: 2; text: Boo" position="0 0.5 0" rotation="30 0 0"></a-entity>
+    		rotation="20 0 0">
 	</a-box>
-  
-	<a-entity 
-		geometry="primitive: box"
-		material="color: green"
+	<a-entity n-text="fontSize: 1; text: Boo"
+		n-skeleton-parent="part: spine;"
+		position="1 -0.5 -2"
+    		rotation="20 0 0">
+	</a-entity>
+	
+	<a-box 
+		color='green'
 	  	n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 		position="1.5 -1 -2"
 	  	scale="0.3 0.1 0.1"
-    		rotation="30 0 0">
-    		<a-entity n-text="fontSize: 2; text: Laugh" position="0 0.5 0" rotation="30 0 0"></a-entity>
-	</a-entity>
+    		rotation="20 0 0">
+	</a-box>
+	<a-entity n-text="fontSize: 1; text: Laugh"
+		n-skeleton-parent="part: spine;"
+		position="1.5 -0.5 -2"
+    		rotation="20 0 0">
+	</a-entity>	
 	
 </a-scene>
 </body>
