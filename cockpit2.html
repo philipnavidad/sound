@@ -41,35 +41,35 @@
     			rotation="-30 0 0">
 		</a-mixin>
 	  	<a-mixin id="cheer"
-			geometry="primitive: box"
+			geometry="primitive: circle; radius: 0.05"
 			material="color: yellow"
 	  		n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
 			sync="own-on: mousedown" sync-n-sound
 			n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 			sync sync-n-skeleton-parent
-	       		position="0.35 -0.1 -1"
+	       		position="0.2 -0.1 -1"
 	  		scale="0.3 0.1 0.1"
     			rotation="-30 0 0">
 		</a-mixin>	
 		<a-mixin id="boo"
-			geometry="primitive: box"
+			geometry="primitive: circle; radius: 0.05"
 			material="color: red"
 	  		n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
 			sync="own-on: mousedown" sync-n-sound
 			n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 			sync sync-n-skeleton-parent
-	       		position="0.7 -0.1 -1"
+	       		position="0.4 -0.1 -1"
 	  		scale="0.3 0.1 0.1"
     			rotation="-30 0 0">
 		</a-mixin>	
 		<a-mixin id="laugh"
-			geometry="primitive: box"
+			geometry="primitive: circle; radius: 0.05"
 			material="color: green"
 	  		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 			sync="own-on: mousedown" sync-n-sound
 			n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 			sync sync-n-skeleton-parent
-	       		position="1.05 -0.1 -1"
+	       		position="0.6 -0.1 -1"
 	  		scale="0.3 0.1 0.1"
     			rotation="-30 0 0">
 		</a-mixin>
@@ -100,19 +100,19 @@
 	</a-entity>
   	<a-entity n-text="fontSize: 1; text: Cheer"
 		n-skeleton-parent="part: spine;"
-		position="0.35 0 -1"
+		position="0.2 0 -1"
     		rotation="-30 0 0"
 		scale="0.5 0.5 0.5">
 	</a-entity>
   	<a-entity n-text="fontSize: 1; text: Boo"
 		n-skeleton-parent="part: spine;"
-		position="0.7 0 -1"
+		position="0.4 0 -1"
     		rotation="-30 0 0"
 		scale="0.5 0.5 0.5">
 	</a-entity>
 	<a-entity n-text="fontSize: 1; text: Laugh"
 		n-skeleton-parent="part: spine;"
-		position="1.05 0 -1"
+		position="0.6 0 -1"
     		rotation="-30 0 0"
 		scale="0.5 0.5 0.5">
 	</a-entity>	
