@@ -31,44 +31,46 @@
 <a-scene debug altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-test">
 
 	<a-box color='blue' 
-	  n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
+	  	n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
-		position="1 0 -2"
-	  scale="0.3 0.1 0.1"
-    rotation="30 0 0">
-    <a-entity n-text="fontSize: 2; text: Applause" position="0 0.5 0" rotation="30 0 0"></a-entity>
+		position="0 -1 -2"
+	  	scale="0.3 0.1 0.1"
+    		rotation="30 0 0">
+    		<a-entity n-text="fontSize: 2; text: Applause" position="0 0.5 0" rotation="30 0 0"></a-entity>
 	</a-box>
   
-  <a-box color='yellow' 
-	  n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
+  	<a-box color='yellow' 
+	  	n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
-		position="1.5 0 -2"
-	  scale="0.3 0.1 0.1"
-    rotation="30 0 0">
-    <a-entity n-text="fontSize: 2; text: Cheer" position="0 0.5 0" rotation="30 0 0"></a-entity>
+		position="0.5 -1 -2"
+	  	scale="0.3 0.1 0.1"
+    		rotation="30 0 0">
+    		<a-entity n-text="fontSize: 2; text: Cheer" position="0 0.5 0" rotation="30 0 0"></a-entity>
 	</a-box>
   
 	<a-box color='red' 
-	  n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
+	  	n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
-		position="2 0 -2"
-	  scale="0.3 0.1 0.1"
-    rotation="30 0 0">
-    <a-entity n-text="fontSize: 2; text: Boo" position="0 0.5 0" rotation="30 0 0"></a-entity>
+		position="1 -1 -2"
+	  	scale="0.3 0.1 0.1"
+    		rotation="30 0 0">
+    		<a-entity n-text="fontSize: 2; text: Boo" position="0 0.5 0" rotation="30 0 0"></a-entity>
 	</a-box>
   
-	<a-box color='green' 
-	  n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
+	<a-entity 
+		geometry="primitive: box"
+		material="color: green"
+	  	n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 		sync="own-on: mousedown" sync-n-sound
 		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
-		position="2.5 0 -2"
-	  scale="0.3 0.1 0.1"
-    rotation="30 0 0">
-    <a-entity n-text="fontSize: 2; text: Laugh" position="0 0.5 0" rotation="30 0 0"></a-entity>
-	</a-box>
+		position="1.5 -1 -2"
+	  	scale="0.3 0.1 0.1"
+    		rotation="30 0 0">
+    		<a-entity n-text="fontSize: 2; text: Laugh" position="0 0.5 0" rotation="30 0 0"></a-entity>
+	</a-entity>
 	
 </a-scene>
 </body>
