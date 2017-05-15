@@ -31,14 +31,13 @@
 <a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-test">
 	<a-assets>
 		<a-mixin id="applause"
-			geometry="primitive: box"
+			geometry="primitive: circle; radius: 1"
 			material="color: blue"
 	  		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
 			sync="own-on: mousedown" sync-n-sound
 			n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
 			sync sync-n-skeleton-parent
 	       		position="0 -0.1 -1"
-	  		scale="0.3 0.1 0.1"
     			rotation="-30 0 0">
 		</a-mixin>
 	  	<a-mixin id="cheer"
