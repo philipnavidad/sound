@@ -18,7 +18,7 @@
 <body>
 <a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-soundboard">
 
-  <a-entity id="applause"
+	<a-entity id="applause"
 		geometry="primitive: box" material="color: blue" position="8.2 4 -6.5" rotation="0 20 0" scale="0.5 0.5 0.5"
 		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
@@ -26,39 +26,30 @@
 		<a-entity n-text="fontSize: 2; text: Applause" position="0 1 0"></a-entity>
 	</a-entity>
 
-  <a-entity id="cheer"
-		geometry="primitive: box" material="color: green" position="9.2 4 -6.5" rotation="0 20 0" scale="0.5 0.5 0.5"
+ 	<a-entity id="cheer"
+		geometry="primitive: box" material="color: green" position="9.2 4 -6.7" rotation="0 20 0" scale="0.5 0.5 0.5"
 		n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Cheer" position="0 1 0"></a-entity>
 	</a-entity>
   
-  <a-entity id="boo"
-		geometry="primitive: box" material="color: red" position="10.2 4 -6.5" rotation="0 20 0" scale="0.5 0.5 0.5"
+	<a-entity id="boo"
+		geometry="primitive: box" material="color: red" position="10.2 4 -6.9" rotation="0 20 0" scale="0.5 0.5 0.5"
 		n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Boo" position="0 1 0"></a-entity>
 	</a-entity>
   
-  <a-entity id="laugh"
-		geometry="primitive: box" material="color: blue" position="11.2 4 -6.5" rotation="0 20 0" scale="0.5 0.5 0.5"
+	<a-entity id="laugh"
+		geometry="primitive: box" material="color: blue" position="11.2 4 -7.1" rotation="0 20 0" scale="0.5 0.5 0.5"
 		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: laugh1" position="0 1 0"></a-entity>
 	</a-entity>
 
-  <a-entity id="laugh2"
-		geometry="primitive: box" material="color: blue" position="12.2 4 -5.5" rotation="0 20 0" scale="0.5 0.5 0.5"
-		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: laugh2" position="0 1 0"></a-entity>
-	</a-entity>
-  
-  
 </a-scene>
 </body>
 </html>
