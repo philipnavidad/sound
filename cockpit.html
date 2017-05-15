@@ -39,6 +39,14 @@
     		rotation="30 0 0">
     		<a-entity n-text="fontSize: 2; text: Applause" position="0 0.5 0" rotation="30 0 0"></a-entity>
 	</a-box>
+	<a-text value="Applause!"
+	  	n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
+		sync="own-on: mousedown" sync-n-sound
+		n-skeleton-parent="part: spine;" altspace-cursor-collider="enabled: true"
+		position="0 -0.5 -2"
+	  	scale="0.3 0.1 0.1"
+    		rotation="30 0 0">
+	</a-text>
   
   	<a-box color='yellow' 
 	  	n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
