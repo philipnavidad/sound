@@ -21,7 +21,7 @@
 	<a-entity id="applause1"
 		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
 		wire="on: click; emit: gogogo; targets: #applause1a, #applause1b"
-		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: files/applause_Loop_Verb.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Applause1" position="0 0.3 0"></a-entity>
@@ -29,12 +29,12 @@
 	<a-text value="Applause1" color="white" position="-0.45 5.5 9"></a-text>
 	<a-entity id="applause1a" flow-debugger="gogogo"
 		geometry="primitive: box" material="color: white" position="-6 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: gogogo"
+		n-sound="src: files/applause_Loop_Verb.wav; volume: 0.7; oneshot: true; on: gogogo"
 		sync="own-on: gogogo" sync-n-sound>
 	</a-entity>
 	<a-entity id="applause1b" flow-debugger="gogogo"
 		geometry="primitive: box" material="color: white" position="6 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: gogogo"
+		n-sound="src: files/applause_Loop_Verb.wav; volume: 0.7; oneshot: true; on: gogogo"
 		sync="own-on: gogogo" sync-n-sound>
 	</a-entity>	
 	
