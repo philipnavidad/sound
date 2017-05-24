@@ -20,7 +20,7 @@
 
 	<a-entity id="applause1"
 		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		wire="on: click; emit: gogogo; target: #applause1a"
+		wire="on: click; emit: gogogo; targets: #applause1a, #applause1b"
 		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
@@ -28,50 +28,111 @@
 	</a-entity>
 	<a-text value="Applause1" color="white" position="-0.45 5.5 9"></a-text>
 	<a-entity id="applause1a" flow-debugger="gogogo"
-		geometry="primitive: box" material="color: white" position="-0.75 1 0" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh.wav; volume: 0.7; oneshot: true; on: gogogo"
+		geometry="primitive: box" material="color: white" position="-4 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: gogogo"
 		sync="own-on: gogogo" sync-n-sound>
 	</a-entity>
+	<a-entity id="applause1b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="4 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>	
+	
 
  	<a-entity id="Applause2"
 		geometry="primitive: box" material="color: green" position="-0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #applause2a, #applause2b"
 		n-sound="src: files/Short_Appluase.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Applause2" position="0 0.3 0"></a-entity>
 	</a-entity>
+	<a-entity id="applause2a" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-3.8 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Short_Appluase.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="applause2b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="3.8 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Short_Appluase.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>		
   
 	<a-entity id="Applause3"
 		geometry="primitive: box" material="color: green" position="-0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #applause3a, #applause3b"
 		n-sound="src: files/applause_Whistles.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause3;" position="0 0.3 0"></a-entity>
 	</a-entity>
+	<a-entity id="applause3a" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-4.2 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="applause3b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="4.2 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>		
   
 	<a-entity id="Applause4"
 		geometry="primitive: box" material="color: green" position="0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #applause4a, #applause4b"
 		n-sound="src: files/applause_Whistles2.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause4" position="0 0.3 0"></a-entity>
 	</a-entity>
+	<a-entity id="applause4a" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-3.6 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles2.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="applause4b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="3.6 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles2.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>		
 	
 	<a-entity id="Applause5"
 		geometry="primitive: box" material="color: green" position="0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #applause5a, #applause5b"
 		n-sound="src: files/Long_Applause.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
 	</a-entity>
+	<a-entity id="applause5a" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-3.4 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Long_Applause.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="applause5b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="3.4 2.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Long_Applause.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>	
 	
 	<a-entity id="Applause6"
 		geometry="primitive: box" material="color: green" position="0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #applause6a, #applause6b"
 		n-sound="src: files/WALLA2.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
 	</a-entity>
+	<a-entity id="applause6a" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-3.2 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/WALLA2.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="applause6b" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="3.2 3 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/WALLA2.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>		
 	
 	<a-entity id="Laugh1"
 		geometry="primitive: box" material="color: green" position="-0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
