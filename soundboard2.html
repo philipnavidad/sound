@@ -17,100 +17,115 @@
 
 <body>
 <a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-soundboard">
+	
+	<a-assets>
+		<audio id="applause1" src="files/short-applause1.wav" preload="auto"></audio>
+		<audio id="applause2" src="files/Short_Appluase.wav" preload="auto"></audio>
+		<audio id="applause3" src="files/applause_Whistles.wav" preload="auto"></audio>
+		<audio id="applause4" src="files/applause_Whistles2.wav" preload="auto"></audio>
+		<audio id="applause5" src="files/Long_Applause.wav" preload="auto"></audio>
+		<audio id="applause6" src="files/WALLA2.wav" preload="auto"></audio>
+		<audio id="laugh1" src="files/small_Laugh.wav" preload="auto"></audio>
+		<audio id="laugh2" src="files/small_Laugh2.wav" preload="auto"></audio>
+		<audio id="laugh3" src="files/small_Laugh3.wav" preload="auto"></audio>
+		<audio id="laugh4" src="files/small_Laugh4.wav" preload="auto"></audio>
+		<audio id="laugh5" src="files/small_Laugh5.wav" preload="auto"></audio>
+		<audio id="laugh6" src="files/small_Laugh6.wav" preload="auto"></audio>		
+	</a-assets>
 
 	<a-entity id="applause1"
 		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause1; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Applause1" position="0 0.3 0"></a-entity>
 	</a-entity>
 	<a-text value="Applause1" color="white" position="-0.45 5.5 9"></a-text>
 
- 	<a-entity id="Applause2"
+ 	<a-entity id="applause2"
 		geometry="primitive: box" material="color: green" position="-0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/Short_Appluase.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause2; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Applause2" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="Applause3"
+	<a-entity id="applause3"
 		geometry="primitive: box" material="color: green" position="-0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/applause_Whistles.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause3; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause3;" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="Applause4"
+	<a-entity id="applause4"
 		geometry="primitive: box" material="color: green" position="0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/applause_Whistles2.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause4; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause4" position="0 0.3 0"></a-entity>
 	</a-entity>
 	
-	<a-entity id="Applause5"
+	<a-entity id="applause5"
 		geometry="primitive: box" material="color: green" position="0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/Long_Applause.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause5; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
 	</a-entity>
 	
-	<a-entity id="Applause6"
+	<a-entity id="applause6"
 		geometry="primitive: box" material="color: green" position="0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/WALLA2.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #applause6; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
 	</a-entity>
 	
-	<a-entity id="Laugh1"
+	<a-entity id="laugh1"
 		geometry="primitive: box" material="color: green" position="-0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh1; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Laugh1" position="0 0.3 0"></a-entity>
 	</a-entity>
 	<a-text value="Applause" color="white" position="-0.45 5.5 9"></a-text>
 
- 	<a-entity id="Laugh2"
+ 	<a-entity id="laugh2"
 		geometry="primitive: box" material="color: green" position="-0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh2.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh2; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Laugh2" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="Laugh3"
+	<a-entity id="laugh3"
 		geometry="primitive: box" material="color: green" position="-0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh3.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh3; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Laugh3;" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="Laugh4"
+	<a-entity id="laugh4"
 		geometry="primitive: box" material="color: green" position="0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh4.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh4; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Laugh4" position="0 0.3 0"></a-entity>
 	</a-entity>
 	
-		<a-entity id="Laugh5"
+		<a-entity id="laugh5"
 		geometry="primitive: box" material="color: green" position="0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh5.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh5; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Laugh5;" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="Laugh6"
+	<a-entity id="laugh6"
 		geometry="primitive: box" material="color: green" position="0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: files/small_Laugh6.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: #laugh6; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Laugh6" position="0 0.3 0"></a-entity>
