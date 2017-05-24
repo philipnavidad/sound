@@ -18,38 +18,102 @@
 <body>
 <a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-soundboard">
 
-	<a-entity id="applause"
-		geometry="primitive: box" material="src: files/laugh.png" position="-1 6 9" rotation="0 0 0" scale="0.1 0.1 0.05"
+	<a-entity id="applause1"
+		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
 		n-sound="src: files/short-applause1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 2; text: Applause1" position="0 0.3 0"></a-entity>
 	</a-entity>
-	<a-text value="Applause" color="white" height="10" position="-1 6.5 9"></a-text>
-	<a-entity text="value: Hello World;"></a-entity>
+	<a-text value="Applause1" color="white" position="-0.45 5.5 9"></a-text>
 
- 	<a-entity id="cheer"
-		geometry="primitive: box" material="color: green" position="-0.5 6 9" rotation="0 0 0" scale="0.1 0.1 0.05"
-		n-sound="src: files/cheer1.wav; volume: 0.7; oneshot: true; on: click"
+ 	<a-entity id="Applause2"
+		geometry="primitive: box" material="color: green" position="-0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Short_Appluase.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Cheer" position="0 0.5 0"></a-entity>
-		<a-entity text="value: Hello World;"></a-entity>
+		<a-entity n-text="fontSize: 2; text: Applause2" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="boo"
-		geometry="primitive: box" material="color: red" position="0 6 9" rotation="0 0 0" scale="0.1 0.1 0.05"
+	<a-entity id="Applause3"
+		geometry="primitive: box" material="color: green" position="-0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Applause3;" position="0 0.3 0"></a-entity>
+	</a-entity>
+  
+	<a-entity id="Applause4"
+		geometry="primitive: box" material="color: green" position="0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/applause_Whistles2.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Applause4" position="0 0.3 0"></a-entity>
+	</a-entity>
+	
+	<a-entity id="Applause5"
+		geometry="primitive: box" material="color: green" position="0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Long_Applause.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
+	</a-entity>
+	
+	<a-entity id="Applause6"
+		geometry="primitive: box" material="color: green" position="0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/WALLA2.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Applause5" position="0 0.3 0"></a-entity>
+	</a-entity>
+	
+	<a-entity id="Laugh1"
+		geometry="primitive: box" material="color: green" position="-0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Small_Group_Laugh.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 2; text: Laugh1" position="0 0.3 0"></a-entity>
+	</a-entity>
+	<a-text value="Applause" color="white" position="-0.45 5.5 9"></a-text>
+
+ 	<a-entity id="Laugh2"
+		geometry="primitive: box" material="color: green" position="-0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/Small_Group_Laugh_2.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 2; text: Laugh2" position="0 0.3 0"></a-entity>
+	</a-entity>
+  
+	<a-entity id="Laugh3"
+		geometry="primitive: box" material="color: green" position="-0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
 		n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 1; text: Boo;" position="0 0.5 0"></a-entity>
+		<a-entity n-text="fontSize: 1; text: Laugh3;" position="0 0.3 0"></a-entity>
 	</a-entity>
   
-	<a-entity id="laugh"
-		geometry="primitive: box" material="color: yellow" position="0.5 6 9" rotation="0 0 0" scale="0.1 0.1 0.05"
+	<a-entity id="Laugh4"
+		geometry="primitive: box" material="color: green" position="0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
 		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 1; text: laugh" position="0 0.5 0"></a-entity>
+		<a-entity n-text="fontSize: 1; text: Laugh4" position="0 0.3 0"></a-entity>
+	</a-entity>
+	
+		<a-entity id="Laugh5"
+		geometry="primitive: box" material="color: green" position="0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/boo2.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Laugh5;" position="0 0.3 0"></a-entity>
+	</a-entity>
+  
+	<a-entity id="Laugh6"
+		geometry="primitive: box" material="color: green" position="0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/laugh1.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: Laugh6" position="0 0.3 0"></a-entity>
 	</a-entity>
 
 </a-scene>
