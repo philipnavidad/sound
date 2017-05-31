@@ -182,6 +182,22 @@
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 1; text: Laugh6" position="0 0.3 0"></a-entity>
 	</a-entity>
+	
+	<a-entity id="drumroll"
+		geometry="primitive: box" material="color: yellow" position="1.05 5.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/DrumRoll.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: drummroll" position="0 0.3 0"></a-entity>
+	</a-entity>
+	
+	<a-entity id="drumrollhit"
+		geometry="primitive: box" material="color: red" position="1.05 5.2 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/DrumRoll_Hit.wav; volume: 0.7; oneshot: true; on: click"
+		altspace-cursor-collider="enabled: true"
+		sync="own-on: mousedown" sync-n-sound>
+		<a-entity n-text="fontSize: 1; text: drumrollhit" position="0 0.3 0"></a-entity>
+	</a-entity>
 
 </a-scene>
 </body>
