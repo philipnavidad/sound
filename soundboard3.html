@@ -185,18 +185,40 @@
 	
 	<a-entity id="drumroll"
 		geometry="primitive: box" material="color: yellow" position="1.05 5.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #drumroll1, #drumroll2"
 		n-sound="src: files/DrumRoll.wav; volume: 0.7; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 1; text: drummroll" position="0 0.3 0"></a-entity>
+		<a-entity n-text="fontSize: 2; text: Applause1" position="0 0.3 0"></a-entity>
+	</a-entity>
+	<a-entity id="drumroll1" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-5 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/DrumRoll.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="drumroll2" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="5 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/DrumRoll.wav; volume: 0.7; oneshot: true; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
 	</a-entity>
 	
 	<a-entity id="outro"
-		geometry="primitive: box" material="color: red" position="1.05 5.2 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		geometry="primitive: box" material="color: red" position="1.05 5.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
+		wire="on: click; emit: gogogo; targets: #outro1, #outro2"
 		n-sound="src: files/outro.wav; volume: 0.7; oneshot: false; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 1; text: drumrollhit" position="0 0.3 0"></a-entity>
+		<a-entity n-text="fontSize: 2; text: Applause1" position="0 0.3 0"></a-entity>
+	</a-entity>
+	<a-entity id="outro1" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="-5 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/outro.wav; volume: 0.7; oneshot: false; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
+	</a-entity>
+	<a-entity id="outro2" flow-debugger="gogogo"
+		geometry="primitive: box" material="color: white" position="5 2.5 7.5" rotation="0 0 0" scale="0.15 0.15 0.05"
+		n-sound="src: files/outro.wav; volume: 0.7; oneshot: false; on: gogogo"
+		sync="own-on: gogogo" sync-n-sound>
 	</a-entity>
 		
 </a-scene>
