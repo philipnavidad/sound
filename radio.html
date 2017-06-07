@@ -7,94 +7,103 @@
 </head>
 
 <body>
+	
+	<a-assets>
+    		<a-asset-item id="desk" src="desk.dae"></a-asset-item>
+	</a-assets>  
+	
 <a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-soundboard">
 
-	<a-entity id="Air_Horn"
-		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Air_Horn.wav; volume: 1; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Air_Horn" position="0 0.5 0"></a-entity>
-	</a-entity>
+	<a-entity collada-model="#desk" light="type: ambient; color: #CCC" position="10.2 -0.8 -6.5" scale="0.8 0.8 0.8" rotation="0 20 0"></a-entity>
+	
+	<a-entity position="10.2 -0.8 -6.5" rotation="0 200 0">
+		<a-entity id="Air_Horn"
+			geometry="primitive: box" material="color: green" position="-0.75 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Air_Horn.wav; volume: 1; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Air_Horn" position="0 0.6 0"></a-entity>
+		</a-entity>
 
- 	<a-entity id="Dont_call_me_Shirley"
-		geometry="primitive: box" material="color: green" position="-0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Dont_call_me_Shirley.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Dont_call_me_Shirley" position="0 0.5 0"></a-entity>
-	</a-entity>
-  
-	<a-entity id="Dum_dum_dum"
-		geometry="primitive: box" material="color: green" position="-0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Dum_dum_dum.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Dum_dum_dum" position="0 0.5 0"></a-entity>
-	</a-entity>
-  
-	<a-entity id="Fart"
-		geometry="primitive: box" material="color: green" position="0.15 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Fart.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Fart.wav" position="0 0.5 0"></a-entity>
-	</a-entity>
-	
-	<a-entity id="From_San_Francisco"
-		geometry="primitive: box" material="color: green" position="0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/From_San_Francisco.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: From_San_Francisco" position="0 0.5 0"></a-entity>
-	</a-entity>
-	
-	<a-entity id="Hot_Pockets"
-		geometry="primitive: box" material="color: green" position="0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Hot_Pockets.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Hot_Pockets" position="0 0.5 0"></a-entity>
-	</a-entity>
-	
-	<a-entity id="I_like_turtles"
-		geometry="primitive: box" material="color: green" position="-0.75 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/I_like_turtles.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: I_like_turtles" position="0 0.5 0"></a-entity>
-	</a-entity>
+		<a-entity id="Dont_call_me_Shirley"
+			geometry="primitive: box" material="color: green" position="-0.45 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Dont_call_me_Shirley.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Dont_call_me_Shirley" position="0 0.5 0"></a-entity>
+		</a-entity>
 
- 	<a-entity id="Intro"
-		geometry="primitive: box" material="color: green" position="-0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Intro.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Intro" position="0 0.5 0"></a-entity>
-	</a-entity>
-  
-	<a-entity id="Rice_a_roni"
-		geometry="primitive: box" material="color: green" position="-0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Rice_a_roni.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Rice_a_roni" position="0 0.5 0"></a-entity>
-	</a-entity>
-  
-	<a-entity id="These_go_to_11"
-		geometry="primitive: box" material="color: green" position="0.15 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/These_go_to_11.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: These_go_to_11" position="0 0.5 0"></a-entity>
-	</a-entity>
-	
-		<a-entity id="Waynes_World"
-		geometry="primitive: box" material="color: green" position="0.45 4.5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Waynes_World.wav; volume: 0.7; oneshot: true; on: click"
-		altspace-cursor-collider="enabled: true"
-		sync="own-on: mousedown" sync-n-sound>
-		<a-entity n-text="fontSize: 2; text: Waynes_World" position="0 0.5 0"></a-entity>
+		<a-entity id="Dum_dum_dum"
+			geometry="primitive: box" material="color: green" position="-0.15 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Dum_dum_dum.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Dum_dum_dum" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="Fart"
+			geometry="primitive: box" material="color: green" position="0.15 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Fart.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Fart.wav" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="From_San_Francisco"
+			geometry="primitive: box" material="color: green" position="0.45 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/From_San_Francisco.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: From_San_Francisco" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="Hot_Pockets"
+			geometry="primitive: box" material="color: green" position="0.75 3 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Hot_Pockets.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Hot_Pockets" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="I_like_turtles"
+			geometry="primitive: box" material="color: green" position="-0.75 2.5 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/I_like_turtles.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: I_like_turtles" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="Intro"
+			geometry="primitive: box" material="color: green" position="-0.45 2.5 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Intro.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Intro" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="Rice_a_roni"
+			geometry="primitive: box" material="color: green" position="-0.15 2.5 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Rice_a_roni.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Rice_a_roni" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+		<a-entity id="These_go_to_11"
+			geometry="primitive: box" material="color: green" position="0.15 2.5 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/These_go_to_11.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: These_go_to_11" position="0 0.6 0"></a-entity>
+		</a-entity>
+
+			<a-entity id="Waynes_World"
+			geometry="primitive: box" material="color: green" position="0.45 2.5 0" rotation="0 0 0" scale="0.15 0.15 0.05"
+			n-sound="src: radio/Waynes_World.wav; volume: 0.7; oneshot: true; on: click"
+			altspace-cursor-collider="enabled: true"
+			sync="own-on: mousedown" sync-n-sound>
+			<a-entity n-text="fontSize: 2; text: Waynes_World" position="0 0.6 0"></a-entity>
+		</a-entity>
 	</a-entity>
 
 </a-scene>
