@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<a-scene altspace="fullspace: false" sync-system="author: altspacevr; app: sound-sync-soundboard">
+<a-scene altspace="fullspace: true" sync-system="author: altspacevr; app: sound-sync-soundboard">
 
 	<a-entity id="Air_Horn"
 		geometry="primitive: box" material="color: green" position="-0.75 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
@@ -19,7 +19,7 @@
 
  	<a-entity id="Dont_call_me_Shirley"
 		geometry="primitive: box" material="color: green" position="-0.45 5 9" rotation="0 0 0" scale="0.15 0.15 0.05"
-		n-sound="src: radio/Dont_call_me_Shirley.wav; volume: 0.7; oneshot: true; on: click"
+		n-sound="src: radio/Dont_call_me_Shirley.wav; volume: 1; oneshot: true; on: click"
 		altspace-cursor-collider="enabled: true"
 		sync="own-on: mousedown" sync-n-sound>
 		<a-entity n-text="fontSize: 2; text: Dont_call_me_Shirley" position="0 0.3 0"></a-entity>
